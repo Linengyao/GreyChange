@@ -2,10 +2,17 @@
 //
 
 #include <iostream>
+#include <opencv.hpp>
 
+using namespace cv;
 int main()
 {
-    std::cout << "Hello World!\n";
+	cv::Mat srcMat = imread("E:/桌面壁纸/1.jpg", 0);
+	imshow("src", srcMat);
+	waitKey(0);
+	return 0;
+
+    //std::cout << "Hello World!\n";
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
